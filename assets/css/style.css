@@ -1,0 +1,306 @@
+	body {
+		background-color: #fff;
+		/* margin: 40px; */
+		font: 13px/20px  sans-serif;
+		color: #4F5155;
+		margin:0;
+		height: auto;
+	}
+.wrapper{
+	position: relative;
+	min-height: 100%;
+}
+*{
+	box-sizing: border-box;
+}
+	/* a {
+		color: #003399;
+		background-color: transparent;
+		font-weight: normal;
+	} */
+
+	h1 {
+		color: #444;
+		background-color: transparent;
+		border-bottom: 1px solid #D0D0D0;
+		font-size: 19px;
+		font-weight: normal;
+		margin: 0 0 14px 0;
+		padding: 14px 15px 10px 15px;
+	}
+	.btn{		
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 1px solid transparent;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	cursor: pointer!important;
+	}
+	.btn-primary{
+		color: #fff;
+  		background-color: #0069d9;
+  		border-color: #0062cc;
+
+	}
+	.btn-right{
+		float:right;
+	}
+	.btn-primary:hover{
+		background-color: #4391e4;
+		text-decoration: none;
+	}
+
+	
+	code {
+		font-family: Consolas, Monaco, Courier New, Courier, monospace;
+		font-size: 12px;
+		background-color: #f9f9f9;
+		border: 1px solid #D0D0D0;
+		color: #002166;
+		display: block;
+		margin: 14px 0 14px 0;
+		padding: 12px 10px 12px 10px;
+	}
+
+	#body {
+		margin: 0 15px 0 15px;
+	}
+
+	p.footer {
+		text-align: right;
+		font-size: 11px;
+		border-top: 1px solid #D0D0D0;
+		line-height: 32px;
+		padding: 0 10px 0 10px;
+		margin: 20px 0 0 0;
+	}
+
+	#container {
+		margin: 10px;
+		margin-left: 265px;
+		border: 1px solid #D0D0D0;
+		box-shadow: 0 0 8px #D0D0D0;
+		position: relative;
+		z-index: 0;
+	}
+	#container.move{
+		margin-left: 70px;
+	}
+
+#sidebar {
+  visibility: visible;
+  width: 260px;  
+  min-height: 100%;
+  /* height: inherit; */
+  height: 100vh;
+  background-color: #343a40; /* White background */
+  /* border-right: 1px solid #e0e0e0; Subtle edge */
+  position: absolute;
+  top:0;
+  z-index: 1567; 
+  box-shadow: 0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22) !important;
+}
+#sidebar.little{
+	width: 70px;
+	/* visibility: hidden; */
+}
+#sidebar.little #logo{
+	width: 70px;
+}
+#sidebar.little #logo span{
+	visibility: hidden;
+}
+#sidebar.little .menu-list li a span{
+	display: none;
+}
+
+#sidebar.little .menu-list li a::after{
+	content: '';
+}
+.menu-list {
+  list-style: none;
+  padding: 0;
+  /* margin-top: 0; */
+  /* padding: .7956rem .01rem; */
+  /* display: block; */
+  display: block;
+  position: relative;
+  margin-top: 50px;
+  z-index: -1;
+}
+
+.menu-list li, .sub-menu li
+{
+	padding: .5rem 0 .5rem 0;
+}
+
+.menu-list li a { 
+  display: block;
+  padding: .8rem 1rem;
+  text-decoration: none;
+  color: #fff; /* Specified text color */
+  font-weight: 500;
+  font-size: 1.1em;
+  transition: all 0.2s ease;
+  list-style: none; padding: 0; 
+}
+
+/* Hover & Active States */
+.menu-list li a:hover {
+  background-color: #5b5b5c; /* Very light grey */ 
+}
+
+/* .nav-menu { list-style: none; padding: 0; } */
+.dropdown { position: relative; padding-left: 0!important;}
+.dropdown a {position: relative;width: 100%;cursor: pointer;}
+.dropdown a::after{
+	 /* The Unicode value for the 'external-link-alt' icon (adjust as needed for different icons) */
+    content: "\f105"; 
+    /* Specify the font-family of the icon library */
+    font-family: "Font Awesome 7 Free"; 
+    /* Font Awesome requires a font-weight for specific icon styles (e.g., 900 for solid) */
+    font-weight: 900; 
+    /* Add some space between the text and the icon */
+    /* margin-left: 8px;  */
+	margin-right: 5px;
+	/* Optional: style the icon */
+    color: #fff;
+	box-sizing: border-box;
+	float:right;
+}
+.dropdown .sub-menu li a::after{
+	content: ""!important;
+}
+.sub-menu {
+  display: none;
+  position: static; 
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown.hover .sub-menu {
+  display: block;
+  padding-left: 5px;
+}
+.dropdown.hover a::after{
+   content: "\f107"; 
+}
+
+#sidebar #logo{
+	display: block;
+	padding: .7956rem .01rem;
+	line-height: 1.5;
+	border-bottom: 1px solid #4b545c;
+	/* float:left; */
+	white-space: nowrap;
+	font-size: 1.25rem;	
+	width: 260px;
+	color:#fff;
+	background-color: #343a40; /* White background */
+}
+.logo-fixed{
+	position: fixed;
+	top:0;
+	left: 0;
+	z-index: 1520;
+}
+#sidebar #logo img{
+	max-height: 33px;
+	width: auto;
+	float: left;
+	line-height: .8;
+	margin-left: .8rem;
+	margin-right: .5rem;
+	margin-top: -3px;
+}
+#navbar {
+  display: flex;
+  position: relative;
+  margin-left:210px;
+  /* justify-content: space-between; */
+   /* Space logo and links */
+  justify-content: flex-start;
+  align-items: center;           
+   /* Center items vertically */
+  /* padding: 1rem 2rem; */
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #fff;
+  padding: .8272rem .6rem;
+}
+
+#navbar.slide{
+	margin-left: 25px;	
+
+}
+#sidebar #title{
+	font-weight: 300 !important;
+}
+#navbar ul{
+	float: right;
+	margin-right: 20px;
+	
+}
+#navbar ul li{
+	display: inline-block;
+	/* line-height: 80px; */
+	margin:0 5px;
+}
+#navbar ul li a{
+	color:#87888a;
+	padding : 5px 2px;
+	border-radius: 3px;	
+	text-decoration: none;
+}
+#navbar ul li a:hover{
+	color:#4b4d52;	
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px; /* Modern spacing between links */
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%!important;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center!important;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #1a2521;
+  color: white;
+}
+.action{
+	cursor: pointer;
+}
+button.add{
+	display: inline-block;
+	height: 30px!important;
+	border-radius: 0 3px 3px 0 !important;
+}
+input[type='search']{
+	border-radius: 3px 0 0 3px !important;
+}

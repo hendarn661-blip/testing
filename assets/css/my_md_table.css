@@ -1,0 +1,7 @@
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+    th { background-color: #f4f4f4; }
+    .btn-toggle { cursor: pointer; background: #007bff; color: white; border: none; padding: 5px 10px; border-radius: 4px; }
+    .detail-row { display: none; background-color: #f9f9f9; }
+    .detail-table { width: 90%; margin: 10px auto; border-collapse: collapse; }
+    .detail-table th, .detail-table td { border: 1px solid #ccc; padding: 6px; font-size: 14px; }
