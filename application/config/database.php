@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root1',
-	'password' => 'Curoot1',
-	'database' => 'testing',
+	'hostname' => 'db.fr-roub1.bengt.wasmernet.com',
+	'username' => 'user_eba1f0b5',
+	'password' => 'pw_YejpuJPuRwDoVZvDpSyXPIWgi5aTVpT4',
+	'database' => 'db_539bc5a7',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
