@@ -1,4 +1,6 @@
-<?php include('config.php');?>
+<?php 
+require_base_once 'config.php';
+?>
 <!DOCTYPE html>
 <html lang="id">
 <head>
