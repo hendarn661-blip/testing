@@ -1,4 +1,4 @@
 <?php
-header("Location: controller/admin.php");
+header("Location: controller/cermat.php");
 exit();
 ?>
