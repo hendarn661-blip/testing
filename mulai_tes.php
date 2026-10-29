@@ -1,16 +1,16 @@
-<?php 
-require_once('config.php');
-?>
 <!DOCTYPE html>
 <html lang="id">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <head>
     <title>Mulai Tes Kecermatan</title>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css">
 </head>
-<body class="bg-light d-flex align-items-center justify-content-center" style="height: 100vh;">
-    <div class="card p-4 shadow text-center" style="width: 400px;">
+<body class="bg-light d-flex align-items-center justify-content-center" style="min-height: 100vh;">
+    <div class="card p-4 shadow text-center" style="max-width: 550px;">
         <h3>Tes Kecermatan Angka Hilang</h3>
-        <form action="?action=halaman_tes" method="POST">
+        <form action="cermat?action=halaman_tes" method="POST">
             <div class="form-group">
                 <label>Nama Anda :</label>        
                 <input type="text" name="nama" class="form-control mb-3" placeholder="Nama Lengkap" required>
