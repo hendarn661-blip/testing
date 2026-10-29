@@ -8,47 +8,74 @@
     <title>Lembar Kerja Tes Kecermatan</title>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css">
     <style>
-        .table td{
-            padding: .45rem!important;
-        }
-        .tabel-kecermatan{
-            width: 100%;
-        }
-        .tabel-kecermatan th, .tabel-kecermatan td {
-            text-align: center;
-            vertical-align: middle;
-            border: 1px solid #b2b2b2!important;
-        }
-        .header-merah {
-            
-            color: white !important;
-            font-weight: bold;
-        }
-         .header-merah th{
-            background-color: #e60000!important;
-         }
-        .baris-abu {
-            background-color: #d9d9d9 !important;
-        }
-        .input-radio {
-            transform: scale(1.3);
-            cursor: pointer;
-        }
-        .kotak-soal {
-            /*letter-spacing: 15px;*/
-            font-weight: bold;
-            /*padding-left: 15px;*/
-           text-align: center;
-           /*width: 20px!important;*/
+        
+.table td {
+    padding: .45rem !important;
+}
 
-        }
+.tabel-kecermatan {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.tabel-kecermatan th,
+.tabel-kecermatan td {
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #b2b2b2 !important;
+}
+
+.tabel-kecermatan thead th {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #e60000 !important;
+    color: white !important;
+    font-weight: bold;
+}
+
+/* Baris header kedua */
+.tabel-kecermatan thead tr:nth-child(2) th {
+    top: 42px;
+    z-index: 11;
+    background-color: #e60000 !important;
+}
+
+.header-merah {
+    color: white !important;
+    font-weight: bold;
+}
+
+.header-merah th {
+    background-color: #e60000 !important;
+}
+
+.baris-abu {
+    background-color: #d9d9d9 !important;
+}
+
+.input-radio {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.kotak-soal {
+    font-weight: bold;
+    text-align: center;
+}
+.tabel-scroll {
+    max-height: 80vh;
+    overflow-y: auto;
+    overflow-x: auto;
+}
     </style>
 </head>
 <body class="bg-light">
 <div class="container my-4">
-   <form id="form-kecermatan" action="?action=submit_kolektif" method="POST">
+   <form id="form-kecermatan" action="cermat?action=submit_kolektif" method="POST">
         <input type="hidden" id="hd_timer" value="<?= $timer ?>">
-        <div class="table-responsive shadow-sm">
+        <div class="table-responsive shadow-sm tabel-scroll">
         <div class="d-flex justify-content-between align-items-center mb-3">
             <h4 class="text-secondary fw-bold">Kolom Soal Aktif</h4>
             <div id="box-timer" class="badge bg-dark fs-5 p-2 px-3 shadow-sm text-white">
@@ -111,7 +138,7 @@
 <script src="../js/JQuery/jQuery-2.1.4.min.js"></script>
 <script>
     // Konfigurasi Durasi Waktu Ujian (Contoh: 60 detik / 1 menit)
-    let sisaWaktu = 60; 
+    let sisaWaktu = 120; 
     let timerOtomatis;
     let formulirSudahDikirim = false;
 
