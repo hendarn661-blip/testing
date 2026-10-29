@@ -46,7 +46,7 @@
 </head>
 <body class="bg-light">
 <div class="container my-4">
-   <form id="form-kecermatan" action="cermat?action=submit_kolektif" method="POST">
+   <form id="form-kecermatan" action="?action=submit_kolektif" method="POST">
         <input type="hidden" id="hd_timer" value="<?= $timer ?>">
         <div class="table-responsive shadow-sm">
         <div class="d-flex justify-content-between align-items-center mb-3">
