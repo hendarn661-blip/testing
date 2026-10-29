@@ -73,7 +73,7 @@ function halaman_tes() {
     $_SESSION['nama_peserta'] = ($nama !== null) ? $nama : 'Peserta';
    
     // 1. Generate Kunci Statis (5 angka unik)
-    $digits = range(1, 9);
+    $digits = range(0, 9);
     shuffle($digits);
     $kunci = array_slice($digits, 0, 5); 
     
@@ -81,7 +81,7 @@ function halaman_tes() {
 
     // 2. Generate 15 Baris Soal sekaligus
     $daftar_soal = [];
-    for ($i = 1; $i <= 15; $i++) {
+    for ($i = 1; $i <= 45; $i++) {
         $indeks_hilang = array_rand($kunci);
         $angka_hilang = $kunci[$indeks_hilang];
 
