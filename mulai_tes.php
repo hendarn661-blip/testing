@@ -10,7 +10,7 @@ require('config.php');
 <body class="bg-light d-flex align-items-center justify-content-center" style="height: 100vh;">
     <div class="card p-4 shadow text-center" style="width: 400px;">
         <h3>Tes Kecermatan Angka Hilang</h3>
-        <form action="<?=BASE_URL('controller/cermat?action=halaman_tes')?>" method="POST">
+        <form action="<?=BASE_URL?>'controller/cermat?action=halaman_tes'" method="POST">
             <div class="form-group">
                 <label>Nama Anda :</label>        
                 <input type="text" name="nama" class="form-control mb-3" placeholder="Nama Lengkap" required>
