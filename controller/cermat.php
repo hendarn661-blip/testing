@@ -21,7 +21,7 @@ function simpan_skor_db($data) {
 }
 
 // Menentukan fungsi mana yang dijalankan berdasarkan parameter URL ?action=
-$action = isset($_GET['action']) ? $_GET['action'] : 'index';
+$action = isset($_POST['action']) ? $_POST['action'] : 'index';
 
 switch ($action) {
     case 'index':
