@@ -15,7 +15,7 @@
             <tr><th>Benar</th><td><span class="badge bg-success fs-6"><?= $skor; ?></span></td></tr>
             <tr><th>Total Soal Kerja</th><td><?= $total_soal; ?></td></tr>
         </table>
-        <a href="cermat" class="btn btn-primary w-100">Coba Lagi</a>
+        <a href="./cermat.php" class="btn btn-primary w-100">Coba Lagi</a>
     </div>
 </body>
 </html>
