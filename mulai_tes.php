@@ -10,7 +10,8 @@
 <body class="bg-light d-flex align-items-center justify-content-center" style="min-height: 100vh;">
     <div class="card p-4 shadow text-center" style="max-width: 550px;">
         <h3>Tes Kecermatan Angka Hilang</h3>
-        <form action="?action=halaman_tes" method="GET">
+        <form action="cermat" method="POST">
+            <input type="hidden" name="action" value="halaman_tes">
             <div class="form-group">
                 <label>Nama Anda :</label>        
                 <input type="text" name="nama" class="form-control mb-3" placeholder="Nama Lengkap" required>
