@@ -78,9 +78,20 @@
         </div>
 
         <!-- Tabel Riwayat Nilai Peserta -->
-        <div class="card shadow-sm border-0">
+       <div class="card shadow-sm border-0">
             <div class="card-header bg-white py-3">
-                <h5 class="card-title mb-0 fw-bold text-dark"><i class="bi bi-table me-2 text-primary"></i>Riwayat Hasil Ujian</h5>
+                        <h5 class="card-title mb-0 fw-bold text-dark d-inline p-2"><i class="bi bi-table me-2 text-primary"></i>Riwayat Hasil Ujian</h5>
+                        <!-- Form Hapus Semua Riwayat -->
+                        <?php if(!empty($riwayat_ujian)): ?>
+
+                        <form class="d-inline p-2" action="admin" method="POST" onsubmit="return confirm('Apakah Anda yakin ingin menghapus SEMUA riwayat ujian? Data yang dihapus tidak dapat dikembalikan!');">
+                            <button type="submit" name="hapus_semua" class="btn btn-danger btn-sm">
+                                <i class="bi bi-trash me-1"></i> Hapus Riwayat
+                            </button>
+                            <input type="hidden" name="action" value="hapus_riwayat">
+                        </form>
+                        <?php endif; ?>                    
+                </div>
             </div>
             <div class="card-body p-0">
                 <div class="table-responsive">
