@@ -139,7 +139,7 @@
 <script src="../js/JQuery/jQuery-2.1.4.min.js"></script>
 <script>
     // Konfigurasi Durasi Waktu Ujian (Contoh: 60 detik / 1 menit)
-    let sisaWaktu = 120; 
+    let sisaWaktu = 140; 
     let timerOtomatis;
     let formulirSudahDikirim = false;
 
