@@ -73,7 +73,7 @@ function halaman_tes() {
     $_SESSION['nama_peserta'] = ($nama !== null) ? $nama : 'Peserta';
    
     // 1. Generate Kunci Statis (5 angka unik)
-    $digits = range(0, 9);
+    $digits = range(1, 9);
     shuffle($digits);
     $kunci = array_slice($digits, 0, 5); 
     
