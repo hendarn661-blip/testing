@@ -73,7 +73,7 @@
 </head>
 <body class="bg-light">
 <div class="container my-4">
-   <form id="form-kecermatan" action="./cermat.php" method="POST">
+   <form id="form-kecermatan" action="./soal.php" method="POST">
      <input type="hidden" name="action" value="submit_kolektif">
         <input type="hidden" id="hd_timer" value="<?= $timer ?>">
         <div class="table-responsive shadow-sm tabel-scroll">
