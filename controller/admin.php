@@ -74,7 +74,9 @@ switch ($action) {
     case 'index':
         index();
         break;
-        
+    case 'hapus_riwayat':
+        hapus_riwayat();
+        break;   
     default:
         index();
         break;
@@ -106,3 +108,29 @@ function index() {
         echo "View admin/dashboard.php tidak ditemukan. Pastikan folder 'admin' dan file 'dashboard.php' berada di direktori yang benar.";
     }
 }
+function hapus_riwayat() {
+    if (hapus_riwayat_db()) {
+        // Sesuaikan alamat redirect ke halaman admin Anda (misalnya 'admin.php' atau '../admin.php')
+        echo "<script>
+                alert('Semua riwayat tes berhasil dihapus!');
+                window.location.href = 'admin.php'; 
+              </script>";
+    } else {
+        echo "<script>
+                alert('Gagal menghapus riwayat tes.');
+                window.location.href = 'admin.php';
+              </script>";
+    }
+    exit;
+}
+function hapus_riwayat_db() {
+    include('koneksi.php');
+    // Menggunakan TRUNCATE agar semua data terhapus dan ID kembali mulai dari 1
+    $sql = "TRUNCATE TABLE riwayat_tes"; 
+    
+    if ($conn->query($sql) === TRUE) {
+        return true;
+    }
+    return false;
+}
+
