@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="id">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
     <title>Tes Selesai</title>
     <!-- <link rel="stylesheet" href="https://jsdelivr.net"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css">
 </head>
-<body class="bg-light d-flex align-items-center justify-content-center" style="height: 100vh;">
-    <div class="card p-4 shadow text-center" style="width: 450px;">
+<body class="bg-light d-flex align-items-center justify-content-center" style="min-height: 100vh;">
+    <div class="card p-4 shadow text-center" style="max-width: 550px;">
         <h3 class="text-success">Waktu Habis!</h3>
         <p class="text-muted">Hasil evaluasi tes kecermatan Anda telah disimpan ke database.</p>
         <hr>
