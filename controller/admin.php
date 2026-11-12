@@ -124,11 +124,11 @@ function hapus_riwayat() {
     exit;
 }
 function hapus_riwayat_db() {
-    include('koneksi.php');
+    global $conn;
     // Menggunakan TRUNCATE agar semua data terhapus dan ID kembali mulai dari 1
     $sql = "TRUNCATE TABLE riwayat_tes"; 
     
-    if ($conn->query($sql) === TRUE) {
+    if (mysqli_query($conn, $sql) === TRUE) {
         return true;
     }
     return false;
