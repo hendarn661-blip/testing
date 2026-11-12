@@ -109,7 +109,7 @@
                     <?php foreach ($daftar_soal as $nomor => $soal): ?>
                     <tr class="baris-abu">
                         <!-- Nomor Urut Soal -->
-                        <td style="width: 5%; font-weight: bold;"><?= $nomor; ?></td>
+                        <td style="width: 5%; font-weight: bold;" class="text-success"><?= $nomor; ?></td>
                         
                         <!-- Blok 4 Angka Soal -->
                             <?php for($i=0;$i<count($soal['angka_soal']);$i++) 
