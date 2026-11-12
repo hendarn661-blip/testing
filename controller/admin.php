@@ -68,7 +68,7 @@ if (session_status() === PHP_SESSION_NONE) {
 // =========================================================================
 // ROUTING BERSAHAJA (Mengatur fungsi yang dipanggil lewat URL)
 // =========================================================================
-$action = isset($_GET['action']) ? $_GET['action'] : 'index';
+$action = isset($_POST['action']) ? $_POST['action'] : 'index';
 
 switch ($action) {
     case 'index':
