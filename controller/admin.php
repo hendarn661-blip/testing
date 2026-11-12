@@ -113,12 +113,12 @@ function hapus_riwayat() {
         // Sesuaikan alamat redirect ke halaman admin Anda (misalnya 'admin.php' atau '../admin.php')
         echo "<script>
                 alert('Semua riwayat tes berhasil dihapus!');
-                window.location.href = 'admin.php'; 
+                window.location.href = './admin.php'; 
               </script>";
     } else {
         echo "<script>
                 alert('Gagal menghapus riwayat tes.');
-                window.location.href = 'admin.php';
+                window.location.href = './admin.php';
               </script>";
     }
     exit;
