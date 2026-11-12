@@ -84,7 +84,7 @@
                         <!-- Form Hapus Semua Riwayat -->
                         <?php if(!empty($riwayat_ujian)): ?>
 
-                        <form class="d-inline p-2" action="admin" method="POST" onsubmit="return confirm('Apakah Anda yakin ingin menghapus SEMUA riwayat ujian? Data yang dihapus tidak dapat dikembalikan!');">
+                        <form class="d-inline p-2" action="./admin" method="POST" onsubmit="return confirm('Apakah Anda yakin ingin menghapus SEMUA riwayat ujian? Data yang dihapus tidak dapat dikembalikan!');">
                             <button type="submit" name="hapus_semua" class="btn btn-danger btn-sm">
                                 <i class="bi bi-trash me-1"></i> Hapus Riwayat
                             </button>
