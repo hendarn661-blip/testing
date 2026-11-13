@@ -27,13 +27,15 @@
 }
 
 .tabel-kecermatan thead th {
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    /*position: sticky;*/
+    /*top: 0;*/
+    /*z-index: 10;*/
     background-color: #e60000 !important;
     color: white !important;
     font-weight: bold;
 }
+
+
 
 /* Baris header kedua */
 .tabel-kecermatan thead tr:nth-child(2) th {
@@ -68,6 +70,9 @@
     max-height: 80vh;
     overflow-y: auto;
     overflow-x: auto;
+    position: sticky;
+    top: 0;
+    z-index: 99;
 }
     </style>
 </head>
@@ -85,10 +90,54 @@
             </div>
         </div>
 
+            <div class="table-responsive shadow-sm tabel-scroll">
+            <table class="table tabel-kecermatan table-sticky">
+                <thead>
+                   <?php
+                    if($timer==1): ?>
+                        <tr class="header-merah">
+                            <th colspan="10">
+                                  <div class="d-flex flex-row-reverse">
+                                    <div id="box-timer" class="badge bg-dark fs-5 p-2 px-3 shadow-sm text-white">
+                                     <span id="teks-durasi" class="fw-bold">60</span> Detik
+                                    </div>
+                                  </div>                              
+                            </th>
+                        </tr>
+                     <?php endif; ?>
+                    <tr class="header-merah">
+                        <th colspan="10" style="text-align: left;">
+                            Tes Psikomotrik Soal Ke 1 dari !0
+                        </th>
+                    </tr>
+                    <tr class="header-merah">
+                        <th colspan="5" style="width: 50%">
+                            Kunci
+                        </th>
+                        <th style="width: 10%"><?= $kunci[0]; ?></th>
+                        <th style="width: 10%"><?= $kunci[1]; ?></th>
+                        <th style="width: 10%"><?= $kunci[2]; ?></th>
+                        <th style="width: 10%"><?= $kunci[3]; ?></th>
+                        <th style="width: 10%"><?= $kunci[4]; ?></th>
+                    </tr>
+                    <tr class="header-merah">
+                        <th colspan="5" style="width: 50%" >
+                            Jawaban
+                        </th>
+                       <th style="width: 10%">A</th>
+                        <th style="width: 10%">B</th>
+                        <th style="width: 10%">C</th>
+                        <th style="width: 10%">D</th>
+                        <th style="width: 10%">E</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+           
             <table class="table tabel-kecermatan mb-0">
                 <thead>
                     <!-- Baris Kunci Angka -->
-                    <tr class="header-merah" >
+                    <!-- <tr class="header-merah" >
                         <th class="align-middle" rowspan="2" style="width: 10%" >No</th>
                         <th colspan="4" rowspan="2" class="align-middle" style="width: 40%">Soal</th>
                         <th style="width: 10%"><?= $kunci[0]; ?></th>
@@ -96,14 +145,17 @@
                         <th style="width: 10%"><?= $kunci[2]; ?></th>
                         <th style="width: 10%"><?= $kunci[3]; ?></th>
                         <th style="width: 10%"><?= $kunci[4]; ?></th>
-                    </tr>
+                    </tr> -->
                     <!-- Baris Kunci Huruf Opsi -->
                     <tr class="header-merah bg-danger">
-                        <th>A</th>
-                        <th>B</th>
-                        <th>C</th>
-                        <th>D</th>
-                        <th>E</th>
+                        <th class="align-middle" style="width: 10%">No</th>
+                        <th colspan="4" style="width: 40%" class="align-middle">Soal</th>
+
+                        <th style="width: 10%">A</th>
+                        <th style="width: 10%">B</th>
+                        <th style="width: 10%">C</th>
+                        <th style="width: 10%">D</th>
+                        <th style="width: 10%">E</th>
                     </tr>
                 </thead>
                 <tbody>
