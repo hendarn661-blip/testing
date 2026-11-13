@@ -102,7 +102,7 @@
                      <?php endif; ?>
                     <tr class="header-merah">
                         <th colspan="10" style="text-align: left;">
-                            Tes Psikomotrik Soal Ke 1 dari !0
+                            Tes Psikomotrik Soal Ke 1 dari 10
                         </th>
                     </tr>
                     <tr class="header-merah">
