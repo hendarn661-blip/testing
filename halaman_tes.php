@@ -76,6 +76,7 @@
    <form id="form-kecermatan" action="./soal.php" method="POST">
      <input type="hidden" name="action" value="submit_kolektif">
         <input type="hidden" id="hd_timer" value="<?= $timer ?>">
+      <input type="hidden" name="id_tes" value="<?= htmlspecialchars($id_tes); ?>">
         <div class="table-responsive shadow-sm tabel-scroll">
         <div class="d-flex justify-content-between align-items-center mb-3">
             <h4 class="text-secondary fw-bold">Kolom Soal Aktif</h4>
