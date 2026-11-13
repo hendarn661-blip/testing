@@ -74,26 +74,21 @@
     top: 0;
     z-index: 99;
 }
+
+
     </style>
 </head>
 <body class="bg-light">
 <div class="container my-4">
-   <form id="form-kecermatan" action="./soal.php" method="POST">
+   <form id="form-kecermatan" action="soal" method="POST">
      <input type="hidden" name="action" value="submit_kolektif">
         <input type="hidden" id="hd_timer" value="<?= $timer ?>">
-      <input type="hidden" name="id_tes" value="<?= htmlspecialchars($id_tes); ?>">
-        <div class="table-responsive shadow-sm tabel-scroll">
-        <div class="d-flex justify-content-between align-items-center mb-3">
-            <h4 class="text-secondary fw-bold">Kolom Soal Aktif</h4>
-            <div id="box-timer" class="badge bg-dark fs-5 p-2 px-3 shadow-sm text-white">
-                Sisa Waktu: <span id="teks-durasi" class="fw-bold">60</span> Detik
-            </div>
-        </div>
+        <input type="hidden" name="id_tes" value="<?= htmlspecialchars($id_tes); ?>">
 
-            <div class="table-responsive shadow-sm tabel-scroll">
+        <div class="table-responsive shadow-sm tabel-scroll">
             <table class="table tabel-kecermatan table-sticky">
                 <thead>
-                   <?php
+                    <?php
                     if($timer==1): ?>
                         <tr class="header-merah">
                             <th colspan="10">
@@ -181,7 +176,7 @@
                     <?php endforeach; ?>
                 </tbody>
             </table>
-        </div>
+        
 
         <div class="text-end mt-4">
             <button type="submit" id="btn-submit-tes" class="btn btn-danger btn-lg px-5 fw-bold">Selesai & Kirim Jawaban</button>
