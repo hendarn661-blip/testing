@@ -80,7 +80,7 @@
 </head>
 <body class="bg-light">
 <div class="container my-4">
-   <form id="form-kecermatan" action="soal" method="POST">
+   <form id="form-kecermatan" action="./soal.php" method="POST">
      <input type="hidden" name="action" value="submit_kolektif">
         <input type="hidden" id="hd_timer" value="<?= $timer ?>">
         <input type="hidden" name="id_tes" value="<?= htmlspecialchars($id_tes); ?>">
